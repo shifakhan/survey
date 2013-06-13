@@ -2,7 +2,7 @@
 
 #def file_survey(name,file_name)
 
-
+=begin
 def file 
  
     f=File.open("/home/shifa/Documents/#{file_name}.csv").read
@@ -34,11 +34,15 @@ puts "Enter 1 for creating a survey manually"
 puts "Enter 2 for creating a survey through csv file"
 puts "Enter 3 for taking a survey"
 
+
 choice = gets.chomp
 
 case choice
 
   when '1'
+
+=end
+  
   puts "Enter a name for your survey:"
   name = gets.chomp
   s = create
@@ -46,7 +50,7 @@ case choice
   p s
   p s.name
   s.display(s)
-
+=begin
   when '2'
   puts "Enter a name for your survey:"
   name = gets.chomp
@@ -54,7 +58,7 @@ case choice
   file_name = gets.chomp
   a = file
 end
-
+=end
 
 def create
     puts "Enter a name for your survey:"
